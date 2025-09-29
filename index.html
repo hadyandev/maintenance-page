@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Lato, sans-serif;
+        }
+        body {
+            background: url('img/background.png') center/cover no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .main-img {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .maintenance-title {
+            text-align: center;
+            margin-top: 50px;
+            font-weight: bold;
+            font-size: 48px;
+        }
+        .responsive-text {
+            text-align: center;
+            font-size: 30px;
+        }
+        .sosmed-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .sosmed-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            color: inherit;
+        }
+        .custom-footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.8);
+            padding: 30px 0 10px 0;
+        }
+        .footer-text {
+            text-align: center;
+            font-size: 18px;
+            margin: 0;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-image: url('img/background-mobile.png');
+            }
+            .maintenance-title { font-size: 20px; }
+            .responsive-text { font-size: 16px; }
+            .sosmed-links {
+                flex-direction: column;
+                align-items: center;
+                font-size: 16px;
+                gap: 10px;
+            }
+            .custom-footer {
+                padding: 20px 0;
+            }
+            .footer-text { font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-img">
+        <picture>
+            <source srcset="img/main-asset-mobile.png" media="(max-width: 600px)">
+            <img src="img/main-asset.svg" alt="" style="max-width: 100%; height: auto;">
+        </picture>
+    </div>
+    <h1 class="maintenance-title">Saat ini website dalam pemeliharaan</h1>
+    <p class="responsive-text">Mohon Maaf atas ketidaknyamanannya. Kami sedang melakukan pemeliharaan terhadap website ini.</p>
+    <p class="responsive-text">Kamu juga bisa mengunjungi Media Sosial kami :</p>
+    <div class="sosmed-links">
+        <a href="https://www.instagram.com/kemkomdigi" target="_blank" class="sosmed-link">
+            <picture>
+                <source srcset="img/ig-mobile.png" media="(max-width: 600px)">
+                <img src="img/ig.png" alt="Instagram" style="width: 24px; height: 24px;">
+            </picture>
+            kemkomdigi
+        </a>
+        <a href="https://www.x.com/kemkomdigi" target="_blank" class="sosmed-link">
+            <picture>
+                <source srcset="img/x-mobile.png" media="(max-width: 600px)">
+                <img src="img/x.png" alt="X" style="width: 24px; height: 24px;">
+            </picture>
+            kemkomdigi
+        </a>
+        <a href="https://www.youtube.com/@kemkomdigitv" target="_blank" class="sosmed-link">
+            <picture>
+                <source srcset="img/youtube-mobile.png" media="(max-width: 600px)">
+                <img src="img/youtube.png" alt="YouTube" style="width: 24px; height: 24px;">
+            </picture>
+            @KemkomdigiTV
+        </a>
+    </div>
+    <footer class="custom-footer">
+        <p class="footer-text">&copy; 2025 Kementerian Komunikasi dan Digital</p>
+    </footer>
+</body>
+</html>
